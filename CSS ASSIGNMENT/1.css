@@ -1,0 +1,57 @@
+
+        /* METHOD:-1 */
+
+
+        /* form{
+            border: 1px solid black;
+            padding: 10px;
+            max-width: 500px;
+            margin: auto;
+        } */
+
+         /* input,textarea,button
+        {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        } */
+        
+
+        /* METHOD:-2 */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        fieldset{
+            margin:10vh auto;
+            max-width: 500px;
+            background-color: aqua;
+            padding: 10px 20px;
+        }
+        fieldset h1{
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        input,textarea,button{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button{
+            transition: 0.5s;
+        }
+
+        button:hover{
+            transform: scale(1.05);
+            margin-left: 10px/;
+        }

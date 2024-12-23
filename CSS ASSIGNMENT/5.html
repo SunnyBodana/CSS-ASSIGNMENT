@@ -1,0 +1,171 @@
+<!-- • Task: Build a responsive webpage that includes:
+• A navigation bar.
+• A content section with two columns.
+• A footer.
+Additional Requirements:
+• Use media queries to make the webpage responsive for mobile devices.
+• On smaller screens (below 768px), stack the columns vertically.
+• Adjust the font sizes and padding to improve readability on mobile -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task 5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            color: rgb(15, 15, 15);
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header ,footer{
+            background-color: rgb(15, 15, 15);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+        .nav_link ,footer{
+            padding: 1rem;
+        }
+
+        .nav_link li {
+            padding: 0 2.5rem;
+            font-size: 2rem;
+            display: inline-block;
+        }
+        .nav_link li a{
+            color: whitesmoke;
+        }
+
+        main {
+            background-color: whitesmoke;
+            padding: 2rem;
+        }
+
+        main .content {
+            background-color: whitesmoke;
+            display: flex;
+            margin: auto;
+        }
+
+        .content .column {
+            border: 2px solid black;
+            width: 48%;
+            text-align: center;
+            margin: 1rem;
+            line-height:2rem;
+            overflow: hidden;
+            transition: 0.5s ease;
+        }
+        .column:hover{
+            transform: scale(1.02);
+            box-shadow: 2px 2px 10px black;
+        }
+        .column button{
+            background-color: black;
+            width: 100%;
+            color: white;
+            padding: 1rem;
+        }
+        footer{
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        @media (max-width:768px) {
+            header nav {
+                display: block;
+            }
+
+            .nav_link li {
+                font-size: 2rem;
+                display: block;
+                padding: 0;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.271);
+                margin: 1rem;
+            }
+            main .content {
+            background-color: antiquewhite;
+            display: block;
+            margin: auto;
+            padding: 1rem;
+        }
+       
+        .content .column {
+            width: 90%;
+            margin: 2rem;
+            line-height:2rem;
+            overflow: hidden;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        
+            <div class="nav_link">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="column">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.VFjcJswz0WgBcFR-BSM6RQHaI2&pid=Api&P=0&h=180" alt="" width="50%">
+                    <h2>Triamer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!</p>
+                    <p>₹849.00 INR*</p>
+                    <button>add to cart</button>
+            </div>
+            <div class="column">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.VFjcJswz0WgBcFR-BSM6RQHaI2&pid=Api&P=0&h=180" alt="" width="50%">
+                    <h2>Triamer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!</p>
+                    <p>₹849.00 INR*</p>
+                    <button>add to cart</button>
+            </div>
+            <div class="column">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.VFjcJswz0WgBcFR-BSM6RQHaI2&pid=Api&P=0&h=180" alt="" width="50%">
+                    <h2>Triamer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!</p>
+                    <p>₹849.00 INR*</p>
+                    <button>add to cart</button>
+            </div>
+            <div class="column">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.VFjcJswz0WgBcFR-BSM6RQHaI2&pid=Api&P=0&h=180" alt="" width="50%">
+                    <h2>Triamer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, culpa!</p>
+                    <p>₹849.00 INR*</p>
+                    <button>add to cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; &trade; 2024-25 &nbsp; Amazon@.com
+    </footer>
+
+    
+
+
+</body>
+
+</html>
